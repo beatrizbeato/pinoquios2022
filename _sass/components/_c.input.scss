@@ -1,0 +1,32 @@
+.c-input{
+  @include font-size(6);
+  height: $qnorr-baseline * 6;
+  border: 1px solid get-color(grayscale, 200);
+  background-color: get-color(white);
+  width: 100%;
+  padding: 0;
+  transition: 0.3s ease;
+
+  padding: $qnorr-baseline $qnorr-baseline*2; 
+
+  &::placeholder{
+    color: get-color(grayscale, 500);
+    opacity: 1;
+  }
+
+  &:focus{
+    box-shadow: $box-shadow;
+    outline: none;
+    background-color: get-color(white);
+    border-radius: 4px;
+  }
+}
+
+textarea.c-input{
+  max-width: 100%;
+  min-width: 100%;
+  min-height: $qnorr-baseline * 18;
+  max-height: $qnorr-baseline * 32;
+  padding-top: $qnorr-baseline*2;
+  font-family: $qnorr-primary-font-family;
+}

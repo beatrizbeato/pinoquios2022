@@ -1,0 +1,57 @@
+---
+---
+@charset "utf-8";
+
+$baseurl: "{{ site.baseurl }}";
+
+////
+/// CONFIGURATION
+////
+
+// import settings to be overriden by the configuration above;
+@import "settings/index";
+@import "node_modules/@whitesmith/qnorr-styles/scss/settings/index";
+
+/////
+/// TOOLING
+///
+/// [1] - in perfect world this would also import qnorr-styles required dependencies
+/// (mappy-breakpoints), but we're not in a perfect world so check issue#10
+/// for why we decide to not include it by default for now
+///
+/// [2] - You can also import individual function and mixins, but then you have
+/// check their dependencies on documentation, since there's no output code
+/// it makes little sence to do it. It's possible. But not practical.
+////
+@import "node_modules/mappy-breakpoints/_mappy-breakpoints"; // [1] required
+@import "node_modules/@whitesmith/qnorr-styles/scss/tools/index"; //  [2] all functions and mixins
+@import "tools/index";
+
+////
+/// OOCSS MODULES
+///
+/// [3] - normalize.css is being imported manually because SCSS on jekyll for
+/// some reason don't support CSS files import.
+/// The last version imported is 8.0.1 (November 4, 2018).
+////
+@import "vendor/normalize"; // [3]
+
+/// GLOBAL
+@import "node_modules/@whitesmith/qnorr-styles/scss/global/index";
+
+// OBJECTS
+@import "node_modules/@whitesmith/qnorr-styles/scss/objects/index";
+@import "objects/index";
+
+// COMPONENTS
+@import "components/index";
+
+// PAGES
+@import "pages/index";
+
+// UTILITIES
+@import "node_modules/@whitesmith/qnorr-styles/scss/utilities/index";
+@import "utilities/index";
+
+// HACKS
+@import "node_modules/@whitesmith/qnorr-styles/scss/hacks/index";

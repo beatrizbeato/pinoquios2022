@@ -1,0 +1,13 @@
+ul.c-list{
+  padding-left: $qnorr-baseline*3;
+  list-style: none
+}
+
+ol.c-list{
+  padding-left: $qnorr-baseline*3;
+}
+
+.c-list__item{
+  position: relative;
+  margin-bottom: $qnorr-baseline;
+}

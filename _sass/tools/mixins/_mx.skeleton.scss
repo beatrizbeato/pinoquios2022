@@ -1,0 +1,9 @@
+///
+/// Skeleton wrapper element expands to current parent size
+///
+@mixin skeleton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}

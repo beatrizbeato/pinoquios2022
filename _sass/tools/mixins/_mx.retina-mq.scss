@@ -1,0 +1,14 @@
+/////
+/// RETINA-MQ MIXIN USAGE
+///
+/// background-image: [non retina image]
+/// @include retina-mq {
+///   background-image: [retina image]
+/// }
+/////
+
+@mixin retina-mq {
+  @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}

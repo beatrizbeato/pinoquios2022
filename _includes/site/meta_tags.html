@@ -1,0 +1,11 @@
+<meta name="twitter:title" content="{{ page.twitter-title | default: page.title }}" />
+<meta name="twitter:description"
+  content="{{ page.meta-description | default: ' ' }}" />
+<meta name="twitter:image" content="{{ image_root }}{{ page.image | default: '/assets/public/thumbnail.png'}}" />
+<meta name="twitter:image:alt" content="{{ page.twitter-title | default: page.title }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ image_root }}{{ page.image | default: '/assets/public/thumbnail.png'}}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="{{ page.url }}">

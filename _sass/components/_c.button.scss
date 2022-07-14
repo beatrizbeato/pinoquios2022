@@ -1,0 +1,36 @@
+
+.c-button{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font-size(6);
+  font-weight: 700;
+  height: $qnorr-baseline * 6;
+  letter-spacing: 0.05em;
+  
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: get-color(grayscale, 900);
+  background-color: transparent;
+  border: none;
+  padding: 0 $qnorr-baseline*4;
+  
+  &:hover{
+    color: get-color(grayscale, 100);
+    box-shadow: 2px 2px 8px rgba(get-color(black), 0.25);
+  }
+}
+
+.c-button-outline{
+  @extend .c-button;
+  border: 2px solid transparent;
+}
+
+/* ----- style modifiers ----- */
+
+.c-button--block{
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+.c-card{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: $qnorr-baseline * 2;
+
+  box-shadow: 1px 1px 8px rgba(get-color(black), 0.10);;
+}
+

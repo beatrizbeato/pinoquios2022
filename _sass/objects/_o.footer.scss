@@ -1,0 +1,22 @@
+.o-footer{
+  padding: $qnorr-baseline*2 0;
+
+  @include mappy-bp(s){
+    padding: $qnorr-baseline*4 0;
+  }
+}
+
+
+.o-footer__logo{
+  height: $qnorr-baseline*7;
+
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+.o-footer__links-social svg{
+  width: $qnorr-baseline*2;
+  height: $qnorr-baseline*2;
+}

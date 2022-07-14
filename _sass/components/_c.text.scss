@@ -1,0 +1,48 @@
+// Titles
+.c-heading-mega{
+  @include font-size(1);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 800;
+}
+
+.c-text-shadow{
+  text-shadow: 2px 2px get-color(lighter, orange);
+}
+
+.c-heading-large{
+  @include font-size(2);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 700;
+}
+
+.c-heading-section{
+  @include font-size(3);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 700;
+}
+
+// General Text
+.c-text-x-large{
+  @include font-size(4);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 500;
+}
+
+.c-text-large{
+  @include font-size(5);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 500;
+}
+
+.c-text-small{
+  @include font-size(7);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.c-text-xs{
+  @include font-size(8);
+  font-family: $qnorr-primary-font-family;
+  font-weight: 400;
+}

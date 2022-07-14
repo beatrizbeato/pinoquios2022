@@ -1,0 +1,20 @@
+////
+/// Visibility helpers to display/hide items
+/// @group Utilities
+////
+
+@each $breakpoint in $u-text-alignment-breakpoints-list {
+   @include mappy-bp(max $breakpoint){
+      .u-hidden-max\@#{$breakpoint} { display: none; }
+   }
+}
+
+@each $breakpoint in $u-text-alignment-breakpoints-list {
+   @include mappy-bp(max $breakpoint){
+      .u-visible-max\@#{$breakpoint} { display: block; }
+   }
+}
+
+.u-overflow-x-hidden{
+  overflow-x: hidden;
+}

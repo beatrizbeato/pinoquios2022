@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/public/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ site.baseurl }}/assets/public/favicon.ico" type="image/x-icon">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="noydir, noodp">
+
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.meta-description | default: ' ' }}">
+<meta name="keywords" content="{{ page.meta-keywords | default: ' ' }}">
+<meta name="author" content="agrancho ® 2020. All rights Reserved">
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/application.css" type="text/css">
+
+<!-- Google Analytics -->
+{% if jekyll.environment == "production" %}
+  {% include site/ga.html %}
+{% endif %}

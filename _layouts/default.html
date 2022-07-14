@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  {% include site/meta_tags.html %}
+  {% include site/head.html %}
+</head>
+
+<body>
+  {% include shared/navbar.html %}
+
+  <div class="o-skeleton">
+    {{ content }}
+  </div>
+    
+  {% include shared/footer.html %}
+  
+  {% include site/scripts.html %}
+</body>
+</html>

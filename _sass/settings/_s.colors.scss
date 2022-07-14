@@ -1,0 +1,32 @@
+$qnorr-color-maps: (
+  grayscale:(
+    100: #FBFBFB,
+    200: #E7E7E8,
+    300: #D0D0D0,
+    400: #BCBDC0,
+    500: #989898,
+    600: #404041,
+    700: #383838,
+    800: #181818,
+    900: #000000
+  ),
+  lighter:(
+    sun: #EEE923,
+    orange: #EFB31A,
+    candy: #E87EB3,
+    purple: #C087A9,
+    ocean: #BDD8EE, 
+    grass: #89CB91,
+  ),
+
+  sun: #F4CA22,
+  orange: #F19013,
+  candy: #E01B44,
+  purple: #C02080,
+  ocean: #156EB3, 
+  grass: #36AC62, 
+  white: #FFFFFF, 
+  black: #131313, 
+  gray: #BCBDC0
+
+) !default;
