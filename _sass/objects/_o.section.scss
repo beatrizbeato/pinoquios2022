@@ -1,6 +1,5 @@
 
 .o-section{
-  display: block;
   margin:  0px auto;
   width: 100%;
   height: 400px;
@@ -9,10 +8,16 @@
 
 .o-hero{
   display: block;
-  margin: 40px auto 0px;
+  margin: 0px auto 40px;
   width: 100%;
   height: 540px;
   padding: $qnorr-baseline*5 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: beige;
 }
 
 .o-section--small{
@@ -20,4 +25,15 @@
   margin: 0 auto;
   width: 100%;
   padding: $qnorr-baseline*3 0;
+}
+
+.hero-text{
+  margin: 20px 0px;
+  max-width: 920px;
+}
+
+
+.u-size-right{
+  width: 45%;
+  text-align: right;
 }
