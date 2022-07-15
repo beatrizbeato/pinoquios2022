@@ -6,6 +6,10 @@
   padding: 0 $qnorr-baseline * 2;
 }
 
+.o-container--scroll{
+  padding-bottom: $qnorr-baseline * 160;
+}
+
 .o-container--large{
   display: block;
   margin: 0 auto;
