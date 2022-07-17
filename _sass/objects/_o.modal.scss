@@ -1,0 +1,49 @@
+.o-modal\~\~trigger{
+   position: fixed;
+}
+
+.o-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(get-color(grey,100),0.6);
+  transition: max-height 0.5s ease-in-out;
+  display: none;
+  z-index: 1000;
+  .o-modal\~\~trigger:checked + & {
+    display: block;
+  }
+}
+
+.o-modal--content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 1000px;
+  max-width: 95%;
+  border-radius: 6px;
+	padding: 48px;
+	background: get-color(cream);
+	box-shadow: 1px 1px 8px rgba(get-color(black), 0.10);
+}
+
+.o-modal-label{
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+		transform: scale(1.05);
+	}
+}
+
+.o-modal-close{
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	&:hover{
+		padding-left: 8px;
+	}
+}
