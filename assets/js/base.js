@@ -37,7 +37,7 @@ $('a[href*="#"]')
     }
   });
 
-  var offset = $(".moving").offset();
+  /*var offset = $(".moving").offset();
   console.log(offset.left);
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
@@ -64,7 +64,7 @@ $('a[href*="#"]')
     }if (st > 4200 && st <= 4600){
       $(".moving").css("left", offset.left - (st-4199));
     }
-  });
+  });*/
 });
 // ---
 
