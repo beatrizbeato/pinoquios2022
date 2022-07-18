@@ -5,13 +5,15 @@ body{
   font-style: normal;
   font-size: 16px;
   color: get-color(black);
-  background-image: url("/assets/images/bg-experience.svg");
-  background-size: 1440px;
-  background-position: center top;
 
   &.modal-open{
     overflow: hidden;
   }
+  @include mappy-bp(sm){
+    background-image: url("/assets/images/bg-experience.svg");
+    background-size: 1440px;
+    background-position: center top;
+  } 
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,8 +25,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 90px;
+  font-size: 60px;
   margin-bottom: 0px;
+  @include mappy-bp(sm){
+    font-size: 90px;
+  }
 }
 
 h2{
@@ -35,6 +40,7 @@ h2{
    font-size: 24px; 
   }
 }
+
 
 h3{
   font-size: 24px;
@@ -72,11 +78,56 @@ a{
   }
 }
 
+
+
+
+.placa-right{
+  img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  &:before{
+    content: 'seguir viagem';
+    position: absolute;
+    right: 33px;
+    bottom: 8px;
+    line-height: 1.2;
+    text-align: right;
+    font-size: 14px;
+
+  }
+  @include mappy-bp(sm){
+    &:before{
+      display: none;
+    }
+    &:hover{
+      &:before{
+        display: block;
+      }
+    }
+  }
+}
+
+.placa-left\@sm{
+  @include mappy-bp(sm){
+    img{
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    &:before{
+      right: auto;
+      left: 33px;
+    }
+  }
+}
+
 .link-road{
   position: absolute;
   display: block;
   width: 60px;
   height: 96px;
+  right: 0px;
+  bottom:0px;
   cursor: pointer;
   font-weight: 600;
   z-index: 20;
@@ -84,78 +135,61 @@ a{
   animation: crescendo 0.5s alternate infinite ease-in;
   img{
     width: 100%;
-  }  
+  } 
 }
-
-.placa-left{
-  &:hover{
-    &:before{
-      content: 'seguir viagem';
-      position: absolute;
-      left: 33px;
-      bottom: 8px;
-      line-height: 1.2;
-      font-size: 14px;
-    }
-  }
-}
-
-.placa-right{
-  img{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  &:hover{
-    &:before{
-      content: 'seguir viagem';
-      position: absolute;
-      right: 33px;
-      bottom: 8px;
-      line-height: 1.2;
-      text-align: right;
-      font-size: 14px;
-    }
-  }
-}
-
 
 .link-road--1{
-  right: 0px;
-  bottom:-40px;
-   
+  @include mappy-bp(sm){
+    right: 0px;
+    bottom:-40px;
+  } 
 }
 
 .link-road--2{
-  left: -30px;
-  bottom:-60px;
+  @include mappy-bp(sm){
+    right: auto;
+    left: -30px;
+    bottom:-60px;
+  } 
 }
 
 .link-road--3,
 .link-road--8{
-  right: 0px;
-  bottom:-180px;
+  @include mappy-bp(sm){
+    right: 0px;
+    bottom:-180px;
+  } 
 }
 
 .link-road--4{
-  left: 0px;
-  bottom:-160px;
+  @include mappy-bp(sm){
+    right: auto;
+    left: 0px;
+    bottom:-160px;
+  } 
 }
 
 .link-road--5{
-  right: 0px;
-  bottom:-60px;
+  @include mappy-bp(sm){
+    right: 0px;
+    bottom:-60px;
+  } 
    
 }
 
 .link-road--6{
-  right: -100px;
-  bottom:-100px;
-   
+  @include mappy-bp(sm){
+    right: -100px;
+    bottom:-100px;
+  }  
 }
 
 .link-road--7{
-  left: 0px;
-  bottom:-120px;
+  @include mappy-bp(sm){
+    right: auto;
+    left: 0px;
+    bottom:-120px;
+  } 
 }
 
 
