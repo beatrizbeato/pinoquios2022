@@ -53,9 +53,7 @@
 }
 
 .o-modal-close{
-	position: absolute;
-	right: 8px;
-	bottom: 8px;
+  margin-top: 16px;
 	display: inline-block;
   cursor: pointer;
   color: get-color(ocean);
