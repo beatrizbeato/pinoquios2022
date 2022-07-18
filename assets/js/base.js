@@ -52,6 +52,21 @@ $('a[href*="#"]')
       checkboxes[i].addEventListener('click', myFunction, false);
   }
 
+  $(".o-modal-label--left").mouseenter(function(){
+    $(".c-traveler").css("left", "40%");
+  });
+
+  $(".o-modal-label--right").mouseenter(function(){
+    $(".c-traveler").css("left", "60%");
+    $(".c-traveler").css("transform", "scaleX(-1) translateX(-50%)");
+  });
+
+  $(".o-modal-label").mouseleave(function(){
+    $(".c-traveler").css("left", "50%");
+    $(".c-traveler").css("transform", "translateX(-50%)");
+  });
+
+
   /*var offset = $(".moving").offset();
   console.log(offset.left);
   $(window).scroll(function(event) {
