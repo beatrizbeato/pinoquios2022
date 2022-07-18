@@ -25,7 +25,6 @@ h1{
 
 h2,h3,h4,h5,h6{
   font-size: 40px;
-  margin-bottom: 24px;
 }
 
 b{
@@ -34,20 +33,113 @@ b{
 
 @keyframes crescendo {
   0%   {transform: scale(1);}
-  100% {transform: scale(1.1);}
+  100% {transform: scale(1.05);}
 }
 
 a{
-  font-family: 'Calistoga', cursive;
-  font-size: 22px;
   transition: all 0.2s;
+  font-weight: 600;
   color: get-color(ocean);
+  
+}
+
+.text-link{
+  display: inline-block;
+  font-family: 'Calistoga', cursive;
+  font-size: 20px;
   animation: crescendo 0.5s alternate infinite ease-in;
   &:hover{
-    color: #175585;
-    animation: none;
+    color: get-color(purple);
   }
 }
+
+.link-road{
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 96px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 20;
+  transition: all 0.2s ease-in-out;
+  animation: crescendo 0.5s alternate infinite ease-in;
+  img{
+    width: 100%;
+  }  
+}
+
+.placa-left{
+  &:hover{
+    &:before{
+      content: 'seguir viagem';
+      position: absolute;
+      left: 33px;
+      bottom: 8px;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+}
+
+.placa-right{
+  img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  &:hover{
+    &:before{
+      content: 'seguir viagem';
+      position: absolute;
+      right: 33px;
+      bottom: 8px;
+      line-height: 1.2;
+      text-align: right;
+      font-size: 14px;
+    }
+  }
+}
+
+
+.link-road--1{
+  right: 0px;
+  bottom:-40px;
+   
+}
+
+.link-road--2{
+  left: -30px;
+  bottom:-60px;
+}
+
+.link-road--3,
+.link-road--8{
+  right: 0px;
+  bottom:-180px;
+}
+
+.link-road--4{
+  left: 0px;
+  bottom:-160px;
+}
+
+.link-road--5{
+  right: 0px;
+  bottom:-60px;
+   
+}
+
+.link-road--6{
+  right: -100px;
+  bottom:-100px;
+   
+}
+
+.link-road--7{
+  left: 0px;
+  bottom:-120px;
+}
+
+
 
 .sub-title{
   font-size: 30px;

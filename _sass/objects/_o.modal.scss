@@ -32,18 +32,33 @@
 }
 
 .o-modal-label{
+	display: inline-block;
   cursor: pointer;
+  color: get-color(ocean);
+  font-family: 'Calistoga', cursive;
+  font-size: 20px;
+  font-weight: 700;
   z-index: 20;
   transition: all 0.2s ease-in-out;
+  animation: crescendo 0.5s alternate infinite ease-in;
   &:hover{
-		transform: scale(1.05);
+  	color: get-color(purple);
 	}
 }
 
 .o-modal-close{
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-	&:hover{
-		padding-left: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	display: inline-block;
+  cursor: pointer;
+  color: get-color(ocean);
+  font-family: 'Calistoga', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 20;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+  	color: get-color(purple);
 	}
 }
