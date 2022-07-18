@@ -37,6 +37,21 @@ $('a[href*="#"]')
     }
   });
 
+
+  const checkboxes = document.querySelectorAll( 'input[type=checkbox]' );
+
+  var myFunction = function() {
+      if ($(this).is(':checked')) {
+        $('body').addClass('modal-open');
+      } else {
+        $('body').removeClass('modal-open');
+      };
+  };
+
+  for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].addEventListener('click', myFunction, false);
+  }
+
   /*var offset = $(".moving").offset();
   console.log(offset.left);
   $(window).scroll(function(event) {

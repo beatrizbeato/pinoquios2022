@@ -8,6 +8,10 @@ body{
   background-image: url("/assets/images/bg-experience.svg");
   background-size: 1440px;
   background-position: center top;
+
+  &.modal-open{
+    overflow: hidden;
+  }
 }
 
 h1,h2,h3,h4,h5,h6{
