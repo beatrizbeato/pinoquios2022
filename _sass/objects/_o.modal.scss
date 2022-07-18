@@ -31,6 +31,9 @@
 	padding: 32px;
 	background: get-color(cream);
 	box-shadow: 1px 1px 8px rgba(get-color(black), 0.10);
+  img{
+    width: 100%;
+  }
 }
 
 .o-modal-label{
@@ -50,8 +53,8 @@
 
 .o-modal-close{
 	position: absolute;
-	right: 20px;
-	bottom: 20px;
+	right: 8px;
+	bottom: 8px;
 	display: inline-block;
   cursor: pointer;
   color: get-color(ocean);
