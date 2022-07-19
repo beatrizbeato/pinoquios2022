@@ -24,10 +24,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 60px;
+  font-size: 48px;
   margin-bottom: 0px;
   @include mappy-bp(sm){
     font-size: 90px;
+  }
+}
+
+.sub-title{
+  font-size: 26px;
+  font-family: 'Calistoga', Georgia, cursive;
+  font-weight: 600; 
+  @include mappy-bp(sm){
+    font-size: 30px
   }
 }
 
@@ -186,16 +195,14 @@ a{
   } 
 }
 
-.sub-title{
-  font-size: 30px;
-  font-family: 'Calistoga', Georgia, cursive;
-  font-weight: 600;
-}
-
 .theme-title{
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Calistoga', Georgia, cursive;
   color: get-color(ocean);
   font-weight: 600;
-  margin: 20px 0px 12px;
+  margin: 12px 0px;
+  @include mappy-bp(sm){
+    font-size: 24px;
+     margin-top: 20px;
+  }
 }
