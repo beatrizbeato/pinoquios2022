@@ -192,11 +192,17 @@ a{
   } 
 }
 
-
-
 .sub-title{
   font-size: 30px;
   font-family: 'Calistoga', cursive;
-  //color: get-color(ocean);
   font-weight: 600;
+}
+
+
+.theme-title{
+  font-size: 24px;
+  font-family: 'Calistoga', cursive;
+  color: get-color(ocean);
+  font-weight: 600;
+  margin: 20px 0px 12px;
 }
