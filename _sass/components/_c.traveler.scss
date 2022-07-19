@@ -44,7 +44,11 @@
 }
 
 .o-traveler\~\~trigger{
-   position: fixed;
+   
+  @include mappy-bp(sm){
+    top: 560px;
+    left: 0px;
+  }
 }
 .c-traveler{
   transform-origin: top left;
@@ -75,5 +79,11 @@
 
   .o-traveler\~\~trigger:checked + & {
     display: block;
+  }
+
+  &.static{
+    position:absolute;
+    position: absolute;
+    top: 544px;
   }
 }
