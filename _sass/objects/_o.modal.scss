@@ -17,8 +17,6 @@
   }
 }
 
-
-
 .o-modal--content{
   position: absolute;
   top: 50%;
@@ -41,9 +39,9 @@
 	display: inline-block;
   cursor: pointer;
   color: get-color(ocean);
-  font-family: 'Calistoga', cursive;
+  font-family: 'Calistoga', Georgia, cursive;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   z-index: 20;
   transition: all 0.2s ease-in-out;
   animation: crescendo 0.5s alternate infinite ease-in;
@@ -57,9 +55,9 @@
 	display: inline-block;
   cursor: pointer;
   color: get-color(ocean);
-  font-family: 'Calistoga', cursive;
+  font-family: 'Calistoga', Georgia, cursive;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   z-index: 20;
   transition: all 0.2s ease-in-out;
   &:hover{

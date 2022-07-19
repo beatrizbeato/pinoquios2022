@@ -1,6 +1,6 @@
 body{
   
-  font-family: 'Lato', serif;
+  font-family: 'Lato','Lucida Grande', Tahoma, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -17,8 +17,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Calistoga', cursive;
-  //font-family: 'Amatic SC', cursive;
+  font-family: 'Calistoga', Georgia, serif;
   font-weight: 600;
   font-style: normal;
   
@@ -40,7 +39,6 @@ h2{
    font-size: 24px; 
   }
 }
-
 
 h3{
   font-size: 24px;
@@ -65,21 +63,17 @@ a{
   transition: all 0.2s;
   font-weight: 600;
   color: get-color(ocean);
-  
 }
 
 .text-link{
   display: inline-block;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Calistoga', Georgia, cursive;
   font-size: 20px;
   animation: crescendo 0.5s alternate infinite ease-in;
   &:hover{
     color: get-color(purple);
   }
 }
-
-
-
 
 .placa-right{
   img{
@@ -129,7 +123,7 @@ a{
   right: 0px;
   bottom:0px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   z-index: 20;
   transition: all 0.2s ease-in-out;
   animation: crescendo 0.5s alternate infinite ease-in;
@@ -194,14 +188,13 @@ a{
 
 .sub-title{
   font-size: 30px;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Calistoga', Georgia, cursive;
   font-weight: 600;
 }
 
-
 .theme-title{
   font-size: 24px;
-  font-family: 'Calistoga', cursive;
+  font-family: 'Calistoga', Georgia, cursive;
   color: get-color(ocean);
   font-weight: 600;
   margin: 20px 0px 12px;
