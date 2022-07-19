@@ -1,9 +1,11 @@
 .i-compasso{
-	position: fixed;
-	right: 60px;
-	top: 30px;
-	width: 200px;
-	z-index: 200;
-	display: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 200px;
+  z-index: 40;
+  display: none;
+  @include mappy-bp(sm){
+    display: block;
+  }
 }
-

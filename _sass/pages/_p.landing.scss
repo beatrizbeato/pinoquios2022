@@ -84,6 +84,22 @@ a{
   }
 }
 
+.text-link-simple{
+  display: inline-block;
+  font-family: 'Calistoga', Georgia, cursive;
+  font-size: 18px;
+  color: get-color(black);
+  margin: 24px 0px;
+  text-align: right;
+  &:hover{
+    color: get-color(ocean);
+  }
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .placa-right{
   img{
     -webkit-transform: scaleX(-1);

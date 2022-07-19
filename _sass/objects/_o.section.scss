@@ -3,13 +3,14 @@
   width: 100%;
   padding: $qnorr-baseline*5 0 $qnorr-baseline*2;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   position: relative;
   background-color: #FFFFFF;
   z-index: 31;
   
   @include mappy-bp(sm){
+    align-items: center;
     text-align: center;
     height: 450px;
     margin: 0px auto 40px;
